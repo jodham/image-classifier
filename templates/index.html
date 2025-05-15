@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Image Classifier</title>
+</head>
+<body>
+    <h1>Upload an image to classify</h1>
+    <form method="POST" enctype="multipart/form-data">
+        <input type="file" name="file" accept="image/*">
+        <button type="submit">Upload</button>
+    </form>
+
+    {% if filename %}
+        <h2>Result:</h2>
+        <p><strong>Class:</strong> {{ label }}</p>
+        <p><strong>Confidence:</strong> {{ confidence | round(2) }}%</p>
+        <img src="{{ url_for('static', filename='uploads/' + filename) }}" width="300">
+    {% endif %}
+</body>
+</html>

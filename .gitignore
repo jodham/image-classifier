@@ -1,0 +1,13 @@
+# Ignore model checkpoints
+*.h5
+*.keras
+*.ckpt
+checkpoint/
+
+# Ignore dataset and uploaded files
+dataset/
+static/uploads/
+__pycache__/
+.env/
+*.pyc
+.DS_Store
