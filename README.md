@@ -25,6 +25,18 @@ pip install -r requirements.txt
 ## run the app
 python app.py
 
+# creating dataset folders for your image files
+create a parent folder name it "dataset"
+-inside dataset create your different classes of folders
+i.e people folder to hold images of people,
+    animals to hold images of animals,
+    houses to hold images of houses,
+    flowers for flower images
+
+# for errors on unrecognized file formats
+run python singlefix.py 
+in your terminal this will crosscheck all your image files in your dataset 
+and fish out faulty or unrecognized file formats
 ## project structure
 
 ├── app.py                  # Flask web interface
